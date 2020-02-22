@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="@dimen/qn_circle_dia"
+        android:layout_height="@dimen/qn_circle_dia"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_qs_no_unseen"
+        android:text="100"
+        android:id="@+id/grid_tv"/>
+
+</LinearLayout>

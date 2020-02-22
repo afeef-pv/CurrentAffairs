@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drawable_inset">16dp</dimen>
+    <dimen name="cornerRadius_pckr">28dp</dimen>
+    <dimen name="opt_mrg_btm">22dp</dimen>
+    <dimen name="qn_circle_dia">36dp</dimen>
+    <dimen name="qslide_width">306dp</dimen>
+    <dimen name="option_pad">12dp</dimen>
+    <dimen name="corner_radius_btn">12dp</dimen>
+    <dimen name="quiz_cell_mrgn_lr">12dp</dimen>
+    <dimen name="optin_box_width">1dp</dimen>
+    <dimen name="option_box_mb">28dp</dimen>
+    <dimen name="option_box_margin">8dp</dimen>
+</resources>

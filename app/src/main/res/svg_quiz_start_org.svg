@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="242" viewBox="0 0 360 242">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2249" data-name="Rectangle 2249" width="360" height="242" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.988" y1="0.864" x2="-0.001" y2="0.848" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9b00"/>
+      <stop offset="1" stop-color="#b9760f"/>
+    </linearGradient>
+  </defs>
+  <g id="svg_quiz_start_org" clip-path="url(#clip-path)">
+    <g id="Group_2763" data-name="Group 2763">
+      <rect id="Rectangle_28" data-name="Rectangle 28" width="393" height="347.76" rx="47" transform="translate(148.006 -288.278) rotate(45)" fill="url(#linear-gradient)"/>
+      <path id="Path_5155" data-name="Path 5155" d="M49.265-3,362.673-16.675c27.208-1.187,48.251,18.784,47,44.606L397.445,280.37c-1.251,25.822-24.321,47.718-51.53,48.9L32.507,342.949c-27.208,1.187-48.251-18.784-47-44.606L-2.265,45.9C-1.014,20.081,22.057-1.814,49.265-3Z" transform="translate(764.792 86.738) rotate(138)" fill="#ff9b00"/>
+      <path id="Path_5154" data-name="Path 5154" d="M49.265,2.265,362.673,16.673c27.208,1.251,50.279,24.321,51.53,51.53L426.43,334.19c1.251,27.208-19.792,48.251-47,47L66.022,366.782c-27.208-1.251-50.279-24.321-51.53-51.53L2.265,49.265C1.014,22.057,22.057,1.014,49.265,2.265Z" transform="translate(-170.994 -186.278) rotate(45)" fill="#ff9b00"/>
+    </g>
+  </g>
+</svg>

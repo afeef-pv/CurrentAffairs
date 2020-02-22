@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "649754309880",
+    "firebase_url": "https://currentaffairs-87ba9.firebaseio.com",
+    "project_id": "currentaffairs-87ba9",
+    "storage_bucket": "currentaffairs-87ba9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649754309880:android:a3898b9cc89d82fbaff70d",
+        "android_client_info": {
+          "package_name": "com.direction.currentaffairs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649754309880-idkb9ljvqge3cnl9b5dk5n1q8hcvgj9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.direction.currentaffairs",
+            "certificate_hash": "0c04e9536badec6602d2be652569a31723657bfa"
+          }
+        },
+        {
+          "client_id": "649754309880-k5rpq4lksif1a80oud2of3l9ufeaffi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkU6XjmC1aw1rA0utJdnnRWlTaTc14Isg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649754309880-k5rpq4lksif1a80oud2of3l9ufeaffi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

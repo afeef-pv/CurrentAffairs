@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_quiz_view"
+        android:id="@+id/toolbar"/>
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/progress_view"
+        android:visibility="invisible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/nav_view_shadow"
+        android:background="@drawable/shadow_down"
+        android:layout_below="@id/toolbar"/>
+
+    <com.direction.currentaffairs.Widgets.FCViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/quizViewPager"
+        android:layout_below="@+id/nav_view_shadow"/>
+
+
+    <include
+        layout="@layout/questions_slide"
+        android:id="@+id/menu_questions_in_cell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

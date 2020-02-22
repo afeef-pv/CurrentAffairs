@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Current Affairs</string>
+    <string name="title_read">News</string>
+    <string name="title_quiz">Quiz</string>
+    <string name="title_save">Save</string>
+    <string name="title_saves">Saved</string>
+    <string name="title_setting">Settings</string>
+    <string name="facebook_app_id">3418788911525254</string>
+    <string name="fb_login_protocol_scheme">fb3418788911525254</string>
+
+</resources>

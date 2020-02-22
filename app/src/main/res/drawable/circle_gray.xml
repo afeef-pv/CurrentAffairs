@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <stroke android:width="1dp" android:color="#C3C4C3" />
+
+    <size
+        android:height="@dimen/qn_circle_dia"
+        android:width="@dimen/qn_circle_dia" />
+
+</shape>

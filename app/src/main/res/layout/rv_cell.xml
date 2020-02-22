@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+        <ImageView
+            android:id="@+id/news_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/download"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="14dp"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/cell_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:text="Headline nice and small..!\nHeadline nice and small..! "
+                    android:textColor="@android:color/black"
+                    app:autoSizeMaxTextSize="24sp"
+                    app:autoSizeMinTextSize="20sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/subpoints_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/cell_title"/>
+
+                <TextView
+                    android:id="@+id/cell_subpoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    app:autoSizeMaxTextSize="20sp"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    android:visibility="gone"
+                    android:layout_below="@id/cell_title"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subpoints_buttons"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            android:background="@drawable/bg_sub_nav"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/prvs_subpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_decrement"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:padding="12dp"/>
+        <ImageView
+            android:id="@+id/next_subpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_increment"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:padding="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cell_dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            android:gravity="right"
+            android:padding="4dp"
+            android:text="Date"
+            android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/rv_cell_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/svg_whatsapp_icon"
+            android:padding="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/rv_cell_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:layout_toLeftOf="@+id/rv_cell_whatsapp"
+            android:src="@drawable/svg_save_pin"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

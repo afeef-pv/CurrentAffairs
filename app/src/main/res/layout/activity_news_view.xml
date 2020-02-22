@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.NewsViewActivity"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+        <ImageView
+            android:id="@+id/news_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/download"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="14dp"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/cell_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:text="Headline nice and small..!\nHeadline nice and small..! "
+                    android:textColor="@android:color/black"
+                    app:autoSizeMaxTextSize="24sp"
+                    app:autoSizeMinTextSize="20sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/subpoints_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/cell_title"/>
+
+                <TextView
+                    android:id="@+id/cell_subpoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    app:autoSizeMaxTextSize="20sp"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    android:visibility="gone"
+                    android:layout_below="@id/cell_title"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subpoints_buttons"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/prvs_subpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_decrement"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:padding="12dp"/>
+
+        <ImageView
+            android:id="@+id/next_subpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_increment"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/cell_dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            android:gravity="right"
+            android:padding="4dp"
+            android:text="Date"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cell_btn_delete"
+        android:background="@drawable/bg_btn_delete"
+        android:layout_margin="12dp"
+        android:text="Delete" />
+
+</LinearLayout>
